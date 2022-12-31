@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 const Home = (props) => {
   return (
@@ -26,42 +27,44 @@ const Home = (props) => {
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   <span className="text-gray-600">
-                    Announcing our next round of funding.{" "}
-                    <a href="#" className="font-semibold text-indigo-600">
+                    To know more about the developer{" "}
+                    <NavLink
+                      to="/about"
+                      className="font-semibold text-indigo-600"
+                    >
                       <span className="absolute inset-0" aria-hidden="true" />
                       Read more <span aria-hidden="true">&rarr;</span>
-                    </a>
+                    </NavLink>
                   </span>
                 </div>
               </div>
               <div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-                  Data to enrich your online business
+                  CodeViz - The online code editor tailored for you
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                  This Editor was made for quick editing of Javascript and
+                  Python Code.
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
-                  <a
-                    href="#"
+                  <NavLink
+                    to="/register"
                     className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
                   >
-                    Get started
-                    <span className="text-indigo-200" aria-hidden="true">
+                    Register
+                    <span className="text-indigo-200 pl-1" aria-hidden="true">
                       &rarr;
                     </span>
-                  </a>
-                  <a
-                    href="#"
+                  </NavLink>
+                  <NavLink
+                    to="/editor"
                     className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-indigo-700 ring-1 ring-indigo-700/10 hover:ring-white"
                   >
-                    Live demo
-                    <span className="text-gray-400" aria-hidden="true">
+                    Start Editing
+                    <span className="text-gray-400 pl-1" aria-hidden="true">
                       &rarr;
                     </span>
-                  </a>
+                  </NavLink>
                 </div>
               </div>
               <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">

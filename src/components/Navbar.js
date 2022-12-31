@@ -40,10 +40,10 @@ const NavBar = (props) => {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    <NavButton itemTitle="Home" classNames={classNames} />
-                    <NavButton itemTitle="Editor" classNames={classNames} />
-                    <NavButton itemTitle="About" classNames={classNames} />
-                    <NavButton itemTitle="Contact" classNames={classNames} />
+                    <NavButton itemTitle="Home" />
+                    <NavButton itemTitle="Editor" />
+                    <NavButton itemTitle="About" />
+                    <NavButton itemTitle="Contact" />
                   </div>
                 </div>
               </div>
@@ -57,17 +57,17 @@ const NavBar = (props) => {
                 </button>
 
                 {/* Profile dropdown */}
-                <UserDropdownMenu classNames={classNames} />
+                <UserDropdownMenu />
               </div>
             </div>
           </div>
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
-              <NavButtonMobile itemTitle="Home" classNames={classNames} />
-              <NavButtonMobile itemTitle="Editor" classNames={classNames} />
-              <NavButtonMobile itemTitle="About" classNames={classNames} />
-              <NavButtonMobile itemTitle="Contact" classNames={classNames} />
+              <NavButtonMobile itemTitle="Home" />
+              <NavButtonMobile itemTitle="Editor" />
+              <NavButtonMobile itemTitle="About" />
+              <NavButtonMobile itemTitle="Contact" />
             </div>
           </Disclosure.Panel>
         </>

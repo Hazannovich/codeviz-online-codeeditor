@@ -183,7 +183,7 @@ img.ProseMirror-separator {
   left: 0;
   right: 0;
   border-bottom: 1px solid silver;
-  background: white;
+  background: #0f1729;
   z-index: 10;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -247,7 +247,7 @@ img.ProseMirror-separator {
   content: "";
   display: block;
   height: 1px;
-  background-color: silver;
+  background-color: #0f1729;
   line-height: 2px;
 }
 
@@ -268,7 +268,7 @@ img.ProseMirror-separator {
 }
 
 .ProseMirror-prompt {
-  background: white;
+  background: #0f1729;
   padding: 5px 10px 5px 15px;
   border: 1px solid silver;
   position: fixed;
@@ -286,7 +286,7 @@ img.ProseMirror-separator {
 
 .ProseMirror-prompt input[type="text"],
 .ProseMirror-prompt textarea {
-  background: #eee;
+  background: #0f1729;
   border: none;
   outline: none;
 }
@@ -325,11 +325,11 @@ img.ProseMirror-separator {
 }
 #editor,
 .editor {
-  background: white;
-  color: black;
+  background: #0f1729;
+  color: whitesmoke;
   background-clip: padding-box;
   border-radius: 4px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid #0f1729;
   padding: 5px 0;
   margin-bottom: 23px;
 }
